@@ -2,7 +2,7 @@
     <nav aria-label="パンくずリスト">
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">ホーム</a></li>
-        <li class="breadcrumb-item active" aria-current="page">ワークフローとファイル</li>
+        <li class="breadcrumb-item active" aria-current="page">ワークフロー   </li>
       </ol>
     </nav>
 </div>
@@ -11,16 +11,16 @@
 
     <div class="col-sm">
         <div id="id-title">
-                <h1>ワークフローとファイル</h1>
+                <h1>ワークフロー</h1>
         </div>
-        <div class="container-fluid" id="id-list" class="lulu_table">
+        <div class="container-fluid" id="id-list">
             
-            <div class="row">
-                <div class="col-sm-2 d-flex align-items-end">
+            <div class="row"  style="margin-bottom: 10px;">
+                <div class="col-sm-2">
                     <button type="button" name="addWorkflow" class="btn btn-info">新規ワークフロー</button>
                 </div>
             </div>
-            <div class="row border-bottom" v-for="(downloadFileInfo, index) in downloadFileInfos">
+            <div class="row border-bottom lulu_table" v-for="(downloadFileInfo, index) in downloadFileInfos">
                 <div class="col-sm-1 d-flex align-items-end" v-if="index > 0">{{index}}</div>
                 <div class="col-sm-1 d-flex align-items-end" v-else></div>
                 <div class="col-sm-3 d-flex align-items-end">
@@ -51,7 +51,8 @@
                 </div>
                 <div class="col-sm-2 d-flex align-items-end" v-if="index > 0">
                     <button class="btn btn-outline-primary btn-sm mr-2">
-                        <i class="fas fa-file-download"></i>
+                    <i class="fas fa-file-upload"></i>
+
                     </button>
                     <button class="btn btn-outline-danger btn-sm mr-2" onclick="confirm('ファイルを削除します。よろしいですか？');">
                         <i class="far fa-trash-alt"></i>

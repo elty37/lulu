@@ -34,6 +34,9 @@ body {
     width: 128px;
     height:300px;
 }
+.user_only {
+        display: none;
+}
 .login_info{
     background-color:#D7E7AF;
     color: #777;
@@ -49,9 +52,12 @@ body {
 .manager_menu {
     background-color:cadetblue;
 }
-.edit_area {
+.edit_area, {
     background-color: #fff;
     height: 70vh;
+}
+.lulu_table {
+    background-color: #fff;    
 }
 svg {
     margin-left: -1px;

@@ -42,9 +42,9 @@
     <script src="https://kit.fontawesome.com/2b2d907d83.js"></script>
     <?php
       echo $this->Html->script('upload.js');
+      echo $this->Html->script('permit.js');
       echo $this->Html->css('main.css');
     ?>
-
       
       
     <div class="login_info header">
@@ -58,10 +58,8 @@
                   <a href="#" class="navbar-brand">Menu</a>
                     <div class="navbar-collapse" id="navmenu1">
                         <div class="navbar-nav">
-                          <a class="nav-item nav-link" href="#">Excelファイルのアップロード</a>
-                          <a class="nav-item nav-link" href="#">Excelファイルのダウンロード</a>
                           <a class="nav-item nav-link" href="#">ワークフロー</a>
-                          <a class="nav-item nav-link manager_menu" href="#">メンバー</a>
+                          <a class="nav-item nav-link" href="#">メンバー</a>
                           <a class="nav-item nav-link manager_menu" href="#">ロール</a>
                         </div>
                     </div>
